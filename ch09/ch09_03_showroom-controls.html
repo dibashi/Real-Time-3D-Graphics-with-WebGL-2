@@ -1,25 +1,25 @@
 <html>
 <head>
   <title>Real-Time 3D Graphics with WebGL2</title>
-  <link rel="shortcut icon" type="image/png" href="/common/images/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="../common/images/favicon.png" />
 
   <!-- libraries -->
-  <link rel="stylesheet" href="/common/lib/normalize.css">
-  <script type="text/javascript" src="/common/lib/dat.gui.js"></script>
-  <script type="text/javascript" src="/common/lib/gl-matrix.js"></script>
+  <link rel="stylesheet" href="../common/lib/normalize.css">
+  <script type="text/javascript" src="../common/lib/dat.gui.js"></script>
+  <script type="text/javascript" src="../common/lib/gl-matrix.js"></script>
 
   <!-- modules -->
-  <script type="text/javascript" src="/common/js/utils.js"></script>
-  <script type="text/javascript" src="/common/js/EventEmitter.js"></script>
-  <script type="text/javascript" src="/common/js/Camera.js"></script>
-  <script type="text/javascript" src="/common/js/Clock.js"></script>
-  <script type="text/javascript" src="/common/js/Controls.js"></script>
-  <script type="text/javascript" src="/common/js/Floor.js"></script>
-  <script type="text/javascript" src="/common/js/Light.js"></script>
-  <script type="text/javascript" src="/common/js/Program.js"></script>
-  <script type="text/javascript" src="/common/js/Scene.js"></script>
-  <script type="text/javascript" src="/common/js/Texture.js"></script>
-  <script type="text/javascript" src="/common/js/Transforms.js"></script>
+  <script type="text/javascript" src="../common/js/utils.js"></script>
+  <script type="text/javascript" src="../common/js/EventEmitter.js"></script>
+  <script type="text/javascript" src="../common/js/Camera.js"></script>
+  <script type="text/javascript" src="../common/js/Clock.js"></script>
+  <script type="text/javascript" src="../common/js/Controls.js"></script>
+  <script type="text/javascript" src="../common/js/Floor.js"></script>
+  <script type="text/javascript" src="../common/js/Light.js"></script>
+  <script type="text/javascript" src="../common/js/Program.js"></script>
+  <script type="text/javascript" src="../common/js/Scene.js"></script>
+  <script type="text/javascript" src="../common/js/Texture.js"></script>
+  <script type="text/javascript" src="../common/js/Transforms.js"></script>
 
   <script id="vertex-shader" type="x-shader/x-vertex">
     #version 300 es
@@ -215,22 +215,22 @@
           // This is the number of parts to load for this particular model
           partsCount: 25,
           // The path to the model
-          path: '/common/models/bmw-i8/part'
+          path: '../common/models/bmw-i8/part'
         },
         'Audi R8': {
           paintAlias: 'Lack',
           partsCount: 150,
-          path: '/common/models/audi-r8/part'
+          path: '../common/models/audi-r8/part'
         },
         'Ford Mustang': {
           paintAlias: 'pintura_carro',
           partsCount: 103,
-          path: '/common/models/ford-mustang/part'
+          path: '../common/models/ford-mustang/part'
         },
         'Lamborghini Gallardo': {
           paintAlias: 'Yellow',
           partsCount: 66,
-          path: '/common/models/lamborghini-gallardo/part'
+          path: '../common/models/lamborghini-gallardo/part'
         }
       };
     }

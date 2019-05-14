@@ -2,23 +2,23 @@
 
 <head>
   <title>Real-Time 3D Graphics with WebGL2</title>
-  <link rel="shortcut icon" type="image/png" href="/common/images/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="../common/images/favicon.png" />
 
   <!-- libraries -->
-  <link rel="stylesheet" href="/common/lib/normalize.css">
-  <script type="text/javascript" src="/common/lib/dat.gui.js"></script>
-  <script type="text/javascript" src="/common/lib/gl-matrix.js"></script>
+  <link rel="stylesheet" href="../common/lib/normalize.css">
+  <script type="text/javascript" src="../common/lib/dat.gui.js"></script>
+  <script type="text/javascript" src="../common/lib/gl-matrix.js"></script>
 
   <!-- modules -->
-  <script type="text/javascript" src="/common/js/utils.js"></script>
-  <script type="text/javascript" src="/common/js/EventEmitter.js"></script>
-  <script type="text/javascript" src="/common/js/Program.js"></script>
-  <script type="text/javascript" src="/common/js/Scene.js"></script>
-  <script type="text/javascript" src="/common/js/Camera.js"></script>
-  <script type="text/javascript" src="/common/js/Texture.js"></script>
-  <script type="text/javascript" src="/common/js/Clock.js"></script>
-  <script type="text/javascript" src="/common/js/Controls.js"></script>
-  <script type="text/javascript" src="/common/js/Transforms.js"></script>
+  <script type="text/javascript" src="../common/js/utils.js"></script>
+  <script type="text/javascript" src="../common/js/EventEmitter.js"></script>
+  <script type="text/javascript" src="../common/js/Program.js"></script>
+  <script type="text/javascript" src="../common/js/Scene.js"></script>
+  <script type="text/javascript" src="../common/js/Camera.js"></script>
+  <script type="text/javascript" src="../common/js/Texture.js"></script>
+  <script type="text/javascript" src="../common/js/Clock.js"></script>
+  <script type="text/javascript" src="../common/js/Controls.js"></script>
+  <script type="text/javascript" src="../common/js/Transforms.js"></script>
 
   <script id="vertex-shader" type="x-shader/x-vertex">
     #version 300 es
@@ -106,7 +106,7 @@
       transforms = new Transforms(gl, program, camera, canvas);
 
       texture = new Texture(gl);
-      texture.setImage('/common/images/webgl.png');
+      texture.setImage('../common/images/webgl.png');
 
       // Configure cube texture
       cubeTexture = gl.createTexture();
@@ -115,12 +115,12 @@
       gl.texParameteri(gl.TEXTURE_CUBE_MAP, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
       gl.texParameteri(gl.TEXTURE_CUBE_MAP, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
 
-      loadCubemapFace(gl, gl.TEXTURE_CUBE_MAP_POSITIVE_X, cubeTexture, '/common/images/cubemap/positive-x.png');
-      loadCubemapFace(gl, gl.TEXTURE_CUBE_MAP_NEGATIVE_X, cubeTexture, '/common/images/cubemap/negative-x.png');
-      loadCubemapFace(gl, gl.TEXTURE_CUBE_MAP_POSITIVE_Y, cubeTexture, '/common/images/cubemap/positive-y.png');
-      loadCubemapFace(gl, gl.TEXTURE_CUBE_MAP_NEGATIVE_Y, cubeTexture, '/common/images/cubemap/negative-y.png');
-      loadCubemapFace(gl, gl.TEXTURE_CUBE_MAP_POSITIVE_Z, cubeTexture, '/common/images/cubemap/positive-z.png');
-      loadCubemapFace(gl, gl.TEXTURE_CUBE_MAP_NEGATIVE_Z, cubeTexture, '/common/images/cubemap/negative-z.png');
+      loadCubemapFace(gl, gl.TEXTURE_CUBE_MAP_POSITIVE_X, cubeTexture, '../common/images/cubemap/positive-x.png');
+      loadCubemapFace(gl, gl.TEXTURE_CUBE_MAP_NEGATIVE_X, cubeTexture, '../common/images/cubemap/negative-x.png');
+      loadCubemapFace(gl, gl.TEXTURE_CUBE_MAP_POSITIVE_Y, cubeTexture, '../common/images/cubemap/positive-y.png');
+      loadCubemapFace(gl, gl.TEXTURE_CUBE_MAP_NEGATIVE_Y, cubeTexture, '../common/images/cubemap/negative-y.png');
+      loadCubemapFace(gl, gl.TEXTURE_CUBE_MAP_POSITIVE_Z, cubeTexture, '../common/images/cubemap/positive-z.png');
+      loadCubemapFace(gl, gl.TEXTURE_CUBE_MAP_NEGATIVE_Z, cubeTexture, '../common/images/cubemap/negative-z.png');
     }
 
     function loadCubemapFace(gl, target, texture, url) {
@@ -134,7 +134,7 @@
     }
 
     function load() {
-      scene.load('/common/models/geometries/cube-texture.json');
+      scene.load('../common/models/geometries/cube-texture.json');
     }
 
     function draw() {

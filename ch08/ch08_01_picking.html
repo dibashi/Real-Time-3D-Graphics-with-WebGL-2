@@ -1,25 +1,25 @@
 <html>
 <head>
   <title>Real-Time 3D Graphics with WebGL2</title>
-  <link rel="shortcut icon" type="image/png" href="/common/images/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="../common/images/favicon.png" />
 
   <!-- libraries -->
-  <link rel="stylesheet" href="/common/lib/normalize.css">
-  <script type="text/javascript" src="/common/lib/dat.gui.js"></script>
-  <script type="text/javascript" src="/common/lib/gl-matrix.js"></script>
+  <link rel="stylesheet" href="../common/lib/normalize.css">
+  <script type="text/javascript" src="../common/lib/dat.gui.js"></script>
+  <script type="text/javascript" src="../common/lib/gl-matrix.js"></script>
 
   <!-- modules -->
-  <script type="text/javascript" src="/common/js/utils.js"></script>
-  <script type="text/javascript" src="/common/js/EventEmitter.js"></script>
-  <script type="text/javascript" src="/common/js/Camera.js"></script>
-  <script type="text/javascript" src="/common/js/Clock.js"></script>
-  <script type="text/javascript" src="/common/js/Controls.js"></script>
-  <script type="text/javascript" src="/common/js/Floor.js"></script>
-  <script type="text/javascript" src="/common/js/Light.js"></script>
-  <script type="text/javascript" src="/common/js/Program.js"></script>
-  <script type="text/javascript" src="/common/js/Picker.js"></script>
-  <script type="text/javascript" src="/common/js/Scene.js"></script>
-  <script type="text/javascript" src="/common/js/Transforms.js"></script>
+  <script type="text/javascript" src="../common/js/utils.js"></script>
+  <script type="text/javascript" src="../common/js/EventEmitter.js"></script>
+  <script type="text/javascript" src="../common/js/Camera.js"></script>
+  <script type="text/javascript" src="../common/js/Clock.js"></script>
+  <script type="text/javascript" src="../common/js/Controls.js"></script>
+  <script type="text/javascript" src="../common/js/Floor.js"></script>
+  <script type="text/javascript" src="../common/js/Light.js"></script>
+  <script type="text/javascript" src="../common/js/Program.js"></script>
+  <script type="text/javascript" src="../common/js/Picker.js"></script>
+  <script type="text/javascript" src="../common/js/Scene.js"></script>
+  <script type="text/javascript" src="../common/js/Transforms.js"></script>
 
   <script id="vertex-shader" type="x-shader/x-vertex">
     #version 300 es
@@ -182,30 +182,30 @@
 
     function load() {
       scene.add(new Floor(80, 20));
-      scene.load('/common/models/geometries/ball.json', 'ball', {
+      scene.load('../common/models/geometries/ball.json', 'ball', {
         position: [0, 0, -4],
         scale: [3, 3, 3],
         diffuse: [1, 0, 0, 1]
       });
-      scene.load('/common/models/geometries/ball.json', 'disk', {
+      scene.load('../common/models/geometries/ball.json', 'disk', {
         position: [-10, 0, -10],
         scale: [3, 0.5, 3],
         diffuse: [0.3, 0.1, 0.9, 0.5]
       });
-      scene.load('/common/models/geometries/flag.json', 'flag', {
+      scene.load('../common/models/geometries/flag.json', 'flag', {
         position: [-10, 0, 0],
         scale: [1, 1, 1]
       });
-      scene.load('/common/models/geometries/cone3.json', 'cone', {
+      scene.load('../common/models/geometries/cone3.json', 'cone', {
         position: [10, 0, 5],
         scale: [1, 1, 1]
       });
-      scene.load('/common/models/geometries/cone3.json', 'cone2', {
+      scene.load('../common/models/geometries/cone3.json', 'cone2', {
         position: [-7, 0, 2],
         scale: [0.5, 1, 0.5],
         diffuse: [0.3, 0.3, 0.6, 1]
       });
-      scene.load('/common/models/geometries/cube-complex.json', 'cube', {
+      scene.load('../common/models/geometries/cube-complex.json', 'cube', {
         position: [1, 2, 7],
         scale: [4, 4, 4],
         diffuse: [0.1, 1, 0.2, 1]

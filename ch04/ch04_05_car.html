@@ -2,23 +2,23 @@
 
 <head>
   <title>Real-Time 3D Graphics with WebGL2</title>
-  <link rel="shortcut icon" type="image/png" href="/common/images/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="../common/images/favicon.png" />
 
   <!-- libraries -->
-  <link rel="stylesheet" href="/common/lib/normalize.css">
-  <script type="text/javascript" src="/common/lib/gl-matrix.js"></script>
-  <script type="text/javascript" src="/common/lib/dat.gui.js"></script>
+  <link rel="stylesheet" href="../common/lib/normalize.css">
+  <script type="text/javascript" src="../common/lib/gl-matrix.js"></script>
+  <script type="text/javascript" src="../common/lib/dat.gui.js"></script>
 
   <!-- modules -->
-  <script type="text/javascript" src="/common/js/utils.js"></script>
-  <script type="text/javascript" src="/common/js/EventEmitter.js"></script>
-  <script type="text/javascript" src="/common/js/Program.js"></script>
-  <script type="text/javascript" src="/common/js/Scene.js"></script>
-  <script type="text/javascript" src="/common/js/Clock.js"></script>
-  <script type="text/javascript" src="/common/js/Axis.js"></script>
-  <script type="text/javascript" src="/common/js/Floor.js"></script>
-  <script type="text/javascript" src="/common/js/Camera.js"></script>
-  <script type="text/javascript" src="/common/js/Controls.js"></script>
+  <script type="text/javascript" src="../common/js/utils.js"></script>
+  <script type="text/javascript" src="../common/js/EventEmitter.js"></script>
+  <script type="text/javascript" src="../common/js/Program.js"></script>
+  <script type="text/javascript" src="../common/js/Scene.js"></script>
+  <script type="text/javascript" src="../common/js/Clock.js"></script>
+  <script type="text/javascript" src="../common/js/Axis.js"></script>
+  <script type="text/javascript" src="../common/js/Floor.js"></script>
+  <script type="text/javascript" src="../common/js/Camera.js"></script>
+  <script type="text/javascript" src="../common/js/Controls.js"></script>
 
   <!-- vertex Shader -->
   <script id="vertex-shader" type="x-shader/x-vertex">
@@ -172,7 +172,7 @@
       scene.add(new Axis(2000));
       // Helper function that iterates over the number of parts count
       // and loads them asynchronously into our application
-      scene.loadByParts('/common/models/nissan-gtr/part', 178);
+      scene.loadByParts('../common/models/nissan-gtr/part', 178);
     }
 
     // Initialize the necessary transforms

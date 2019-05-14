@@ -2,22 +2,22 @@
 
 <head>
   <title>Real-Time 3D Graphics with WebGL2</title>
-  <link rel="shortcut icon" type="image/png" href="/common/images/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="../common/images/favicon.png" />
 
   <!-- libraries -->
-  <link rel="stylesheet" href="/common/lib/normalize.css">
-  <script type="text/javascript" src="/common/lib/dat.gui.js"></script>
-  <script type="text/javascript" src="/common/lib/gl-matrix.js"></script>
+  <link rel="stylesheet" href="../common/lib/normalize.css">
+  <script type="text/javascript" src="../common/lib/dat.gui.js"></script>
+  <script type="text/javascript" src="../common/lib/gl-matrix.js"></script>
 
   <!-- modules -->
-  <script type="text/javascript" src="/common/js/utils.js"></script>
-  <script type="text/javascript" src="/common/js/Program.js"></script>
-  <script type="text/javascript" src="/common/js/Scene.js"></script>
-  <script type="text/javascript" src="/common/js/Axis.js"></script>
-  <script type="text/javascript" src="/common/js/Floor.js"></script>
-  <script type="text/javascript" src="/common/js/Camera.js"></script>
-  <script type="text/javascript" src="/common/js/Controls.js"></script>
-  <script type="text/javascript" src="/common/js/Transforms.js"></script>
+  <script type="text/javascript" src="../common/js/utils.js"></script>
+  <script type="text/javascript" src="../common/js/Program.js"></script>
+  <script type="text/javascript" src="../common/js/Scene.js"></script>
+  <script type="text/javascript" src="../common/js/Axis.js"></script>
+  <script type="text/javascript" src="../common/js/Floor.js"></script>
+  <script type="text/javascript" src="../common/js/Camera.js"></script>
+  <script type="text/javascript" src="../common/js/Controls.js"></script>
+  <script type="text/javascript" src="../common/js/Transforms.js"></script>
 
   <script id="vertex-shader" type="x-shader/x-vertex">
     #version 300 es
@@ -192,12 +192,12 @@
     function load() {
       scene.add(new Floor(zDimension, 2));
       scene.add(new Axis(zDimension));
-      scene.load('/common/models/geometries/ball.json', 'ball', { 'diffuse': ballColor });
-      scene.load('/common/models/geometries/flag.json', 'flagStart', { 'diffuse': flagStartColor });
-      scene.load('/common/models/geometries/flag.json', 'flagEnd', { 'diffuse': flagEndColor });
-      scene.load('/common/models/geometries/flag.json', 'flag1', { 'diffuse': flagColor });
-      scene.load('/common/models/geometries/flag.json', 'flag2', { 'diffuse': flagColor });
-      scene.load('/common/models/geometries/flag.json', 'flag3', { 'diffuse': flagColor });
+      scene.load('../common/models/geometries/ball.json', 'ball', { 'diffuse': ballColor });
+      scene.load('../common/models/geometries/flag.json', 'flagStart', { 'diffuse': flagStartColor });
+      scene.load('../common/models/geometries/flag.json', 'flagEnd', { 'diffuse': flagEndColor });
+      scene.load('../common/models/geometries/flag.json', 'flag1', { 'diffuse': flagColor });
+      scene.load('../common/models/geometries/flag.json', 'flag2', { 'diffuse': flagColor });
+      scene.load('../common/models/geometries/flag.json', 'flag3', { 'diffuse': flagColor });
     }
 
     function draw() {
