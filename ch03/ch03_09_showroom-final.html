@@ -163,7 +163,7 @@
       parts.forEach(part => {
         // Bind
         gl.bindVertexArray(part.vao);
-        gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, part.ibo);
+        // gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, part.ibo);
 
         // Draw
         gl.drawElements(gl.TRIANGLES, part.indices.length, gl.UNSIGNED_SHORT, 0);
@@ -226,7 +226,7 @@
 
           // Push onto `parts` array for later access
           parts.push(part);
-
+          
           // Clean
           gl.bindVertexArray(null);
           gl.bindBuffer(gl.ARRAY_BUFFER, null);
