@@ -126,6 +126,9 @@
     // Procee key events by updating global orientation values
     function processKey(ev) {
       const lightDirection = gl.getUniform(program, program.uLightDirection);
+      
+     
+      console.log(lightDirection);
       const incrementValue = 10;
 
       switch (ev.keyCode) {

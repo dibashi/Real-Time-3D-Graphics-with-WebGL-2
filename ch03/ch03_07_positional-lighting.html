@@ -154,9 +154,9 @@
       gl.uniform4f(program.uLightAmbient, 1, 1, 1, 1);
       gl.uniform4f(program.uLightDiffuse, 1, 1, 1, 1);
       gl.uniform4f(program.uLightSpecular, 1, 1, 1, 1);
-      gl.uniform4f(program.uMaterialAmbient, 0.1, 0.1, 0.1, 1);
-      gl.uniform4f(program.uMaterialDiffuse, 0.5, 0.8, 0.1, 1);
-      gl.uniform4f(program.uMaterialSpecular, 0.6, 0.6, 0.6, 1);
+      // gl.uniform4f(program.uMaterialAmbient, 0.1, 0.1, 0.1, 1);
+      // gl.uniform4f(program.uMaterialDiffuse, 0.5, 0.8, 0.1, 1);
+      // gl.uniform4f(program.uMaterialSpecular, 0.6, 0.6, 0.6, 1);
       gl.uniform1f(program.uShininess, shininess);
     }
 
@@ -197,7 +197,7 @@
 
           // Bind
           gl.bindVertexArray(object.vao);
-          gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, object.ibo);
+          // gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, object.ibo);
 
           // Draw
           gl.drawElements(gl.TRIANGLES, object.indices.length, gl.UNSIGNED_SHORT, 0);
@@ -273,7 +273,7 @@
         objects.push(data);
 
         // Clean
-        gl.bindVertexArray(vao);
+        gl.bindVertexArray(null);
         gl.bindBuffer(gl.ARRAY_BUFFER, null);
         gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, null);
       });

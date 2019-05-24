@@ -147,8 +147,9 @@
 
       coneIndexBuffer = gl.createBuffer();
       gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, coneIndexBuffer);
-      gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, new Uint16Array(indices), gl.STATIC_DRAW);
+      gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, new Uint8Array(indices), gl.STATIC_DRAW);
 
+      console.log(gl.getParameter(gl.ARRAY_BUFFER_BINDING));
       // Set the global variables based on the parameter type
       if (coneVertexBuffer === gl.getParameter(gl.ARRAY_BUFFER_BINDING)) {
         vboName = 'coneVertexBuffer';
@@ -194,7 +195,7 @@
       gl.bindVertexArray(coneVAO);
 
       // Draw
-      gl.drawElements(gl.LINE_LOOP, indices.length, gl.UNSIGNED_SHORT, 0);
+      gl.drawElements(gl.LINE_LOOP, indices.length, gl.UNSIGNED_BYTE, 0);
 
       // Clean
       gl.bindVertexArray(null);
